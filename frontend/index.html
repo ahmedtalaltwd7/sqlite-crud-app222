@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html  dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Data Entry Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">إدارة البيانات</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">إضافة</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="view.html">عرض البيانات</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-light">
+                        <h2 class="card-title mb-0">إضافة بيانات جديدة</h2>
+                    </div>
+                    <div class="card-body">
+                        <form id="dataForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="field1" name="field1" required>
+                                        <label for="field1">الوحده الاداريه</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="field2" name="field2" required>
+                                        <label for="field2">الوحده الاداريه</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" id="field3" name="field3" required>
+                                        <label for="field3">الاسم</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="tel" class="form-control" id="field4" name="field4" required>
+                                        <label for="field4">الرقم الوظيفي</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="field5" name="field5" required>
+                                        <label for="field5">الرقم الوطني</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="field6" name="field6" required>
+                                        <label for="field6">الوظيفة</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="field7" name="field7" required>
+                                        <label for="field7">حقل</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-floating mb-3">
+                                        <input type="date" class="form-control" id="field8" name="field8" required>
+                                        <label for="field8">تاريخ التعيين</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-floating mb-3">
+                                        <input type="date" class="form-control" id="field9" name="field9" required>
+                                        <label for="field9">تاريخ الميلاد</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="field10" name="field10" required>
+                                        <label for="field10">المستوى</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="field11" name="field11" required>
+                                        <label for="field11">الدرجة </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary">
+                                        <i class="bi bi-save"></i> إضافة
+                                    </button>
+                                    <button type="reset" class="btn btn-secondary">
+                                        <i class="bi bi-x-circle"></i> إلغاء
+                                    </button>
+                                    <a href="view.html" class="btn btn-info">
+                                        <i class="bi bi-table"></i> عرض البيانات
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="input-script.js"></script>
+</body>
+</html>
